@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quizzier</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" id="logout" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Create a Quiz</h2>
+        <input type="text" id="quiz-title" placeholder="Quiz Title">
+        <button onclick="createQuiz()">Create Quiz</button>
+
+        <h2>Quizzes Created</h2>
+        <ul id="quiz-list"></ul>
+
+        <div>
+            <h2>Add Questions to Quiz</h2>
+            <label for="question-count">Number of Questions:</label>
+            <select id="question-count" onchange="generateQuestionInputs()">
+                <option value="0">Select Number of Questions</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        
+            <div id="question-inputs"></div><br>
+            <button onclick="addAllQuestions()">Add Questions</button>
+        </div>
+
+        <h2 >Take a Quiz</h2>
+        <select id="quiz-select" onchange="loadQuestions()">
+            <option value="">Select a Quiz</option>
+        </select>
+        <div id="quiz-questions"></div><br>
+        <button onclick="submitQuiz()" style="display: none;" id="submit-quiz">Submit Quiz</button>
+    </main>
+
+    <footer>
+        <p style="background-color: black;">&copy; 2024 Online Quiz Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

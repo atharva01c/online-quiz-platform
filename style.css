@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    padding: 0; /* Set full height for html and body */
+    margin: 0; /* Remove default margin */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%; /* Set full height for html and body */
+    margin: 0;
+    padding: 0;/* Centers the image */ /* Prevents the image from repeating */
+    background-image: url("bg1.jpg");
+    color: rgb(0, 0, 0);
+}
+
+.signupbg{
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.loginbg{
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.overlay {
+    position: fixed; /* Fixed position to cover entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensure it sits above the background but below other elements */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    backdrop-filter: blur(10px); /* Creates the glass effect */
+    color: rgb(0, 0, 0);
+    padding: 20px;/* Optional: adds rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    padding: 10px; 
+    margin-right: 20px;/* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 1); 
+    color: white;
+    transition: all ease-in-out 0.2s;/* Light hover effect */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #000000;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all ease-in-out 0.2s;
+    border: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.3); /* Same transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    color: white;
+    text-align: center;
+    position: relative; /* Position relative for better stacking */
+    text-align: center;
+}
+
+option{
+    width: 100px;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+#quiz-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+}
+.quiz-container {
+    text-align: left; /* Align text to the left for better readability */
+    width: 300px; /* Set a width for the quiz container */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-left: 600px;
+}
+
