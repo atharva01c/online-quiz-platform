@@ -7,4 +7,3 @@ This platform includes essential features such as:
 User registration and login for personalized access.
 A dashboard for creating quizzes and managing questions.
 A responsive interface for taking quizzes with a scoring system.
-![image](https://github.com/user-attachments/assets/4e731baa-5b5e-497e-a552-59182d374699)
